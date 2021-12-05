@@ -116,7 +116,7 @@ function Player() {
           className="w-14 md:w-36 "
         />
         <VolumeUpIcon
-          className="w-5 h-5 cursor-pointer hover:scale-125 transition transform duration-100 ease-out"
+          className=" h-5 w-5  cursor-pointer hover:scale-125 transition transform duration-100 ease-out"
           onClick={() => volume < 100 && setVolume(volume + 10)}
         />
       </div>
