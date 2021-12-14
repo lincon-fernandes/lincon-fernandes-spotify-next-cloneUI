@@ -13,14 +13,16 @@ function Login({ providers }) {
         alt="spotify"
       />
       {Object.values(providers).map((provider) => {
-        <div key={provider.name}>
-          <button
-            className="bg-[#18D860] text-white p-5 rounded-full m-5"
-            onClick={() => signIn(provider.id, { callbackUrl: '/' })}
-          >
-            Login With {provider.name}
-          </button>
-        </div>;
+        return (
+          <div key={provider.name}>
+            <button
+              className="bg-[#18D860] text-white p-5 rounded-full m-5"
+              onClick={() => signIn(provider.id, { callbackUrl: '/' })}
+            >
+              Login With {provider.name}
+            </button>
+          </div>
+        );
       })}
     </div>
   );
