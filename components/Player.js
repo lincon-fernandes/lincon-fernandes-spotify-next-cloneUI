@@ -1,5 +1,5 @@
 import { VolumeUpIcon as VolumeDownIcon } from '@heroicons/react/outline';
-import { VolumeUpIcon } from '@heroicons/react/Solid';
+import { VolumeUpIcon } from '@heroicons/react/solid';
 import {
   RewindIcon,
   PauseIcon,
