@@ -30,14 +30,12 @@ function Center() {
   }, [playlistId]);
 
   useEffect(() => {
-    if (spotifyApi.getAccessToken()) {
-      spotifyApi
-        .getPlaylist(playlistId)
-        .then((data) => {
-          setPlaylist(data.body);
-        })
-        .catch((err) => console.log('Something went Wrong', err));
-    }
+    spotifyApi
+      .getPlaylist(playlistId)
+      .then((data) => {
+        setPlaylist(data.body);
+      })
+      .catch((err) => console.log('Something went Wrong', err));
   }, [spotifyApi, playlistId, session]);
   return (
     <div className="flex-grow h-screen overflow-y-scroll scrollbar-hide ">

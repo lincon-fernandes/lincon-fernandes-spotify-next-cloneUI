@@ -12,7 +12,7 @@ function Login({ providers }) {
         src="https://links.papareact.com/9xl"
         alt="spotify"
       />
-      {Object.values(providers).map((provider) => (
+      {Object.values(providers).map((provider) => {
         <div key={provider.name}>
           <button
             className="bg-[#18D860] text-white p-5 rounded-full m-5"
@@ -20,8 +20,8 @@ function Login({ providers }) {
           >
             Login With {provider.name}
           </button>
-        </div>
-      ))}
+        </div>;
+      })}
     </div>
   );
 }
